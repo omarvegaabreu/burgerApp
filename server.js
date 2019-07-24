@@ -4,6 +4,9 @@ const methodOverride = require("method-override");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
+//Routes
+const routes = require("./routes/handlers");
+
 //Express application
 const PORT = process.env.PORT || 9001;
 const app = express();
@@ -16,6 +19,9 @@ app.use(methodOverride("_method"));
 //handlebars middleware
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+//app use routes
+app.use("/", routes);
 
 //Setting up the server
 app.listen(PORT, () => {
