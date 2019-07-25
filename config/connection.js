@@ -1,13 +1,16 @@
-//Importing mysql
 const mysql = require("mysql");
+let connection;
 
-//initiating connection
-let connection = mysql.createConnection({
-  host: "localHost",
-  user: "root",
-  password: "password123",
-  database: "burgers_db"
-});
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: "localHost",
+    user: "root",
+    password: "password123",
+    database: "burgers_db"
+  });
+}
 
 connection.connect();
 
