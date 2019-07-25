@@ -1,14 +1,13 @@
 header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
 }
 
 header nav {
-    display: flex;
-
+  display: flex;
 }
 
 header nav a {
-    margin-left: 20px;
+  margin-left: 20px;
 }
