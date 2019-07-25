@@ -5,7 +5,7 @@
         <h2>Favorite Burgers</h2>
         {{#each result}} {{#if is_favorite}}
         <div class="burger" data-id="{{id}}">
-            <img src="images/gabrielle-cepella-607584-unsplash.jpg" alt="">
+            <img src="/public/images/gabrielle-cepella-607584-unsplash.jpg" alt="images">
             <p>{{burger_name}}</p>
             <button class="btn btn-default" data-id="{{id}}">Delete</button>
         </div>
@@ -18,10 +18,10 @@
         {{#each result}} {{#unless is_favorite}}
 
         <div class="burger" data-id="{{id}}">
-            <img src="images/tom-sodoge-95550-unsplash.jpg" alt="">
+            <img src="/public/images/tom-sodoge-95550-unsplash.jpg" alt="">
             <p>{{burger_name}}</p>
             <button class="btn btn-default" data-id="{{id}}">Delete</button>
-            
+
         </div>
         {{/unless}} {{/each}}
     </div>
