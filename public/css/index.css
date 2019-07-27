@@ -10,8 +10,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1 {
+h1,
+h2 {
   text-align: center;
+  color: black;
 }
 
 .content {
@@ -66,4 +68,9 @@ form button {
 
 .content .content-burger__list p {
   font-size: 24px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 2.25rem;
 }
